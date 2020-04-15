@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		24AFE80F243D4CF30095316A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE80E243D4CF30095316A /* AppDelegate.swift */; };
 		24AFE811243D4CF30095316A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE810243D4CF30095316A /* SceneDelegate.swift */; };
-		24AFE813243D4CF30095316A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE812243D4CF30095316A /* ContentView.swift */; };
+		24AFE813243D4CF30095316A /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE812243D4CF30095316A /* MainTodoListView.swift */; };
 		24AFE815243D4CF50095316A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE814243D4CF50095316A /* Assets.xcassets */; };
 		24AFE818243D4CF50095316A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE817243D4CF50095316A /* Preview Assets.xcassets */; };
 		24AFE81B243D4CF50095316A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE819243D4CF50095316A /* LaunchScreen.storyboard */; };
+		24AFE825244561700095316A /* LEMONMILK-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE824244561700095316A /* LEMONMILK-Regular.otf */; };
+		24AFE827244562540095316A /* AnotherDanger-Slanted.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE826244562540095316A /* AnotherDanger-Slanted.otf */; };
+		24AFE8292445639E0095316A /* cubic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE8282445639E0095316A /* cubic.ttf */; };
+		24AFE82B244564F60095316A /* Minecraft-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE82A244564F60095316A /* Minecraft-Regular.otf */; };
+		24AFE82D244566F60095316A /* Minecrafter-Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE82C244566F60095316A /* Minecrafter-Alt.ttf */; };
+		24AFE82F244568150095316A /* blocked.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24AFE82E244568150095316A /* blocked.ttf */; };
+		24AFE833244670140095316A /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE832244670140095316A /* IndexedCollection.swift */; };
+		24AFE8352446701F0095316A /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE8342446701F0095316A /* Binding.swift */; };
+		24AFE837244670290095316A /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE836244670290095316A /* ForEach.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24AFE80B243D4CF30095316A /* Checklist_Rebuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checklist_Rebuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AFE80E243D4CF30095316A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24AFE810243D4CF30095316A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24AFE812243D4CF30095316A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24AFE812243D4CF30095316A /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
 		24AFE814243D4CF50095316A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24AFE817243D4CF50095316A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24AFE81A243D4CF50095316A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24AFE81C243D4CF50095316A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AFE824244561700095316A /* LEMONMILK-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LEMONMILK-Regular.otf"; sourceTree = "<group>"; };
+		24AFE826244562540095316A /* AnotherDanger-Slanted.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AnotherDanger-Slanted.otf"; sourceTree = "<group>"; };
+		24AFE8282445639E0095316A /* cubic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = cubic.ttf; sourceTree = "<group>"; };
+		24AFE82A244564F60095316A /* Minecraft-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Minecraft-Regular.otf"; sourceTree = "<group>"; };
+		24AFE82C244566F60095316A /* Minecrafter-Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Minecrafter-Alt.ttf"; sourceTree = "<group>"; };
+		24AFE82E244568150095316A /* blocked.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blocked.ttf; sourceTree = "<group>"; };
+		24AFE832244670140095316A /* IndexedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
+		24AFE8342446701F0095316A /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		24AFE836244670290095316A /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +76,18 @@
 			children = (
 				24AFE80E243D4CF30095316A /* AppDelegate.swift */,
 				24AFE810243D4CF30095316A /* SceneDelegate.swift */,
-				24AFE812243D4CF30095316A /* ContentView.swift */,
+				24AFE812243D4CF30095316A /* MainTodoListView.swift */,
 				24AFE814243D4CF50095316A /* Assets.xcassets */,
 				24AFE819243D4CF50095316A /* LaunchScreen.storyboard */,
 				24AFE81C243D4CF50095316A /* Info.plist */,
+				24AFE82C244566F60095316A /* Minecrafter-Alt.ttf */,
+				24AFE8282445639E0095316A /* cubic.ttf */,
+				24AFE82E244568150095316A /* blocked.ttf */,
+				24AFE824244561700095316A /* LEMONMILK-Regular.otf */,
+				24AFE82A244564F60095316A /* Minecraft-Regular.otf */,
+				24AFE826244562540095316A /* AnotherDanger-Slanted.otf */,
+				24AFE83124466FF80095316A /* Extensions */,
+				24AFE83024465BA40095316A /* Fonts */,
 				24AFE816243D4CF50095316A /* Preview Content */,
 			);
 			path = Checklist_Rebuild;
@@ -73,6 +99,23 @@
 				24AFE817243D4CF50095316A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		24AFE83024465BA40095316A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		24AFE83124466FF80095316A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24AFE832244670140095316A /* IndexedCollection.swift */,
+				24AFE8342446701F0095316A /* Binding.swift */,
+				24AFE836244670290095316A /* ForEach.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,8 +177,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				24AFE81B243D4CF50095316A /* LaunchScreen.storyboard in Resources */,
+				24AFE827244562540095316A /* AnotherDanger-Slanted.otf in Resources */,
 				24AFE818243D4CF50095316A /* Preview Assets.xcassets in Resources */,
+				24AFE82F244568150095316A /* blocked.ttf in Resources */,
+				24AFE82B244564F60095316A /* Minecraft-Regular.otf in Resources */,
+				24AFE8292445639E0095316A /* cubic.ttf in Resources */,
 				24AFE815243D4CF50095316A /* Assets.xcassets in Resources */,
+				24AFE82D244566F60095316A /* Minecrafter-Alt.ttf in Resources */,
+				24AFE825244561700095316A /* LEMONMILK-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				24AFE80F243D4CF30095316A /* AppDelegate.swift in Sources */,
+				24AFE8352446701F0095316A /* Binding.swift in Sources */,
+				24AFE833244670140095316A /* IndexedCollection.swift in Sources */,
 				24AFE811243D4CF30095316A /* SceneDelegate.swift in Sources */,
-				24AFE813243D4CF30095316A /* ContentView.swift in Sources */,
+				24AFE813243D4CF30095316A /* MainTodoListView.swift in Sources */,
+				24AFE837244670290095316A /* ForEach.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
