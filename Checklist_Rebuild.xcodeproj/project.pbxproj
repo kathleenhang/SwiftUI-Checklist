@@ -22,6 +22,9 @@
 		24AFE833244670140095316A /* IndexedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE832244670140095316A /* IndexedCollection.swift */; };
 		24AFE8352446701F0095316A /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE8342446701F0095316A /* Binding.swift */; };
 		24AFE837244670290095316A /* ForEach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE836244670290095316A /* ForEach.swift */; };
+		24AFE8392448DFBC0095316A /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE8382448DFBC0095316A /* ItemCellView.swift */; };
+		24AFE83B2448E0350095316A /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE83A2448E0350095316A /* TodoListItem.swift */; };
+		24AFE83D2448E0630095316A /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE83C2448E0630095316A /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		24AFE832244670140095316A /* IndexedCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexedCollection.swift; sourceTree = "<group>"; };
 		24AFE8342446701F0095316A /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		24AFE836244670290095316A /* ForEach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEach.swift; sourceTree = "<group>"; };
+		24AFE8382448DFBC0095316A /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
+		24AFE83A2448E0350095316A /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
+		24AFE83C2448E0630095316A /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,15 +83,12 @@
 				24AFE80E243D4CF30095316A /* AppDelegate.swift */,
 				24AFE810243D4CF30095316A /* SceneDelegate.swift */,
 				24AFE812243D4CF30095316A /* MainTodoListView.swift */,
+				24AFE83C2448E0630095316A /* TodoList.swift */,
+				24AFE83A2448E0350095316A /* TodoListItem.swift */,
+				24AFE8382448DFBC0095316A /* ItemCellView.swift */,
 				24AFE814243D4CF50095316A /* Assets.xcassets */,
 				24AFE819243D4CF50095316A /* LaunchScreen.storyboard */,
 				24AFE81C243D4CF50095316A /* Info.plist */,
-				24AFE82C244566F60095316A /* Minecrafter-Alt.ttf */,
-				24AFE8282445639E0095316A /* cubic.ttf */,
-				24AFE82E244568150095316A /* blocked.ttf */,
-				24AFE824244561700095316A /* LEMONMILK-Regular.otf */,
-				24AFE82A244564F60095316A /* Minecraft-Regular.otf */,
-				24AFE826244562540095316A /* AnotherDanger-Slanted.otf */,
 				24AFE83124466FF80095316A /* Extensions */,
 				24AFE83024465BA40095316A /* Fonts */,
 				24AFE816243D4CF50095316A /* Preview Content */,
@@ -104,6 +107,12 @@
 		24AFE83024465BA40095316A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				24AFE82C244566F60095316A /* Minecrafter-Alt.ttf */,
+				24AFE8282445639E0095316A /* cubic.ttf */,
+				24AFE82E244568150095316A /* blocked.ttf */,
+				24AFE824244561700095316A /* LEMONMILK-Regular.otf */,
+				24AFE82A244564F60095316A /* Minecraft-Regular.otf */,
+				24AFE826244562540095316A /* AnotherDanger-Slanted.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -195,12 +204,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AFE83D2448E0630095316A /* TodoList.swift in Sources */,
 				24AFE80F243D4CF30095316A /* AppDelegate.swift in Sources */,
 				24AFE8352446701F0095316A /* Binding.swift in Sources */,
 				24AFE833244670140095316A /* IndexedCollection.swift in Sources */,
 				24AFE811243D4CF30095316A /* SceneDelegate.swift in Sources */,
 				24AFE813243D4CF30095316A /* MainTodoListView.swift in Sources */,
 				24AFE837244670290095316A /* ForEach.swift in Sources */,
+				24AFE83B2448E0350095316A /* TodoListItem.swift in Sources */,
+				24AFE8392448DFBC0095316A /* ItemCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
