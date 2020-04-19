@@ -73,6 +73,7 @@ struct AddNewItemView: View {
                     
                 }
                 .disabled(newItemName.count == 0)
+                .padding(.bottom, 100)
                 Spacer()
                 
                 // disable add item button if user did not input any values

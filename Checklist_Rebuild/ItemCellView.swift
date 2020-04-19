@@ -15,10 +15,11 @@ struct ItemCellView: View {
     // Display each todo list item as a cell-type of view
     var body: some View {
         
-        Button(action: {
-            // when user clicks this cell view, toggle the "task completion switch"
-            self.todoListItem.isChecked.toggle()
-        }) {
+//        Button(action: {
+//            // when user clicks this cell view, toggle the "task completion switch"
+//            self.todoListItem.isChecked.toggle()
+//        }) {
+        NavigationLink(destination: EditTodoListItemView(todoListItem: $todoListItem)) {
             
             // ******* DISPLAY TODO LIST ITEM NAME *********
             HStack {
@@ -43,7 +44,7 @@ struct ItemCellView: View {
                         .fill(Color.gray)
                         .frame(width: 18, height: 18)
                         .shadow(color: Color.black, radius: 1, x: -1, y: -1)
-            }.padding(8)
+        }.padding(8)
         }
     }
 }
