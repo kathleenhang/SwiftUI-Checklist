@@ -9,8 +9,12 @@ import SwiftUI
 
 struct MainTodoListView: View {
     
-    @ObservedObject var todoList = TodoList()
+    @State var isEditing = false
     
+    @ObservedObject var todoList = TodoList()
+    //@State var editItemViewIsVisible = false
+    
+  //  @State var isEditing = false
     // SceneDelegate will create an object of MainTodoListView which will be used to create a screen on this view on first app view
     init() {
         // set the styling property of the UI Navigation Bar's title text to my preference
@@ -32,9 +36,28 @@ struct MainTodoListView: View {
                         // display the cell view for each todo list item
                         ItemCellView(todoListItem: self.$todoList.items[index])
                     }
+                    .onDelete(perform: todoList.deleteTodoItem)
+                    .onMove(perform: todoList.moveTodoItem)
                 }
                 // ********* MAIN SCREEN TITLE TEXT ****************
                 .navigationBarTitle(Text("Shit To Do"), displayMode: .inline)
+                .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive)).animation(Animation.spring())
+                .navigationBarItems(leading:
+                    Button(action: {
+                        self.isEditing.toggle()
+                        
+                    }) {
+                        isEditing ? Image("check")
+                            .resizable()
+                            .frame(width: 35, height: 35)
+                            :
+                        
+                        Image("edit")
+                        .resizable()
+                            .frame(width: 35, height: 35)
+                    }
+                    
+                    )
                 
                 // ********* IMAGE OF POOP ****************
                 Image("poop")
@@ -42,7 +65,8 @@ struct MainTodoListView: View {
                     .frame(width: 170, height: 170)
                 
                 // ********* ADD NEW ITEM BUTTON ****************
-                Button(action:{}) {
+                
+                NavigationLink(destination: AddNewItemView(todoList: todoList)) {
                     ZStack{
                         Rectangle()
                             .fill(Color.orange)
@@ -51,7 +75,8 @@ struct MainTodoListView: View {
                             .padding()
                             .shadow(color: Color.black, radius: 2, x: 1, y: 1)
                         Text("+").font(.custom("blocked", size: 40)).foregroundColor(Color.white)
-                    }
+                    
+                }
                 }
             } // end of vstack
         } // end of NavigationView   

@@ -20,5 +20,14 @@ class TodoList: ObservableObject {
                  TodoListItem(name: "Zomg. 2 much programming"),
                  TodoListItem(name: "FEED MEHHH!!"),
     ]
-   
+    
+    func deleteTodoItem(whichElement: IndexSet) {
+        items.remove(atOffsets: whichElement)
+    }
+    
+    func moveTodoItem(whichElement: IndexSet, destination: Int) {
+        items.move(fromOffsets: whichElement, toOffset: destination)
+    }
+    
+    
 }

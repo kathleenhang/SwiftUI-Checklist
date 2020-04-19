@@ -22,9 +22,15 @@ struct ItemCellView: View {
             
             // ******* DISPLAY TODO LIST ITEM NAME *********
             HStack {
+                //Spacer()
                 Text(todoListItem.name)
+                
+                .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 15)
                 .opacity(0.8)
                 .font(.custom("Minecraft-Regular", size: 25))
+                .fixedSize(horizontal: false, vertical: true)
+                   
                 Spacer()
                 
                 // ******* DISPLAY COMPLETION STATUS ICON **********
@@ -37,7 +43,7 @@ struct ItemCellView: View {
                         .fill(Color.gray)
                         .frame(width: 18, height: 18)
                         .shadow(color: Color.black, radius: 1, x: -1, y: -1)
-            }
+            }.padding(8)
         }
     }
 }

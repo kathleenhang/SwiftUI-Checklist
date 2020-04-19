@@ -25,6 +25,7 @@
 		24AFE8392448DFBC0095316A /* ItemCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE8382448DFBC0095316A /* ItemCellView.swift */; };
 		24AFE83B2448E0350095316A /* TodoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE83A2448E0350095316A /* TodoListItem.swift */; };
 		24AFE83D2448E0630095316A /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE83C2448E0630095316A /* TodoList.swift */; };
+		24AFE8432448E2EC0095316A /* AddNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AFE8422448E2EC0095316A /* AddNewItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		24AFE8382448DFBC0095316A /* ItemCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellView.swift; sourceTree = "<group>"; };
 		24AFE83A2448E0350095316A /* TodoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItem.swift; sourceTree = "<group>"; };
 		24AFE83C2448E0630095316A /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		24AFE8422448E2EC0095316A /* AddNewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				24AFE810243D4CF30095316A /* SceneDelegate.swift */,
 				24AFE812243D4CF30095316A /* MainTodoListView.swift */,
 				24AFE83C2448E0630095316A /* TodoList.swift */,
+				24AFE8422448E2EC0095316A /* AddNewItemView.swift */,
 				24AFE83A2448E0350095316A /* TodoListItem.swift */,
 				24AFE8382448DFBC0095316A /* ItemCellView.swift */,
 				24AFE814243D4CF50095316A /* Assets.xcassets */,
@@ -210,6 +213,7 @@
 				24AFE833244670140095316A /* IndexedCollection.swift in Sources */,
 				24AFE811243D4CF30095316A /* SceneDelegate.swift in Sources */,
 				24AFE813243D4CF30095316A /* MainTodoListView.swift in Sources */,
+				24AFE8432448E2EC0095316A /* AddNewItemView.swift in Sources */,
 				24AFE837244670290095316A /* ForEach.swift in Sources */,
 				24AFE83B2448E0350095316A /* TodoListItem.swift in Sources */,
 				24AFE8392448DFBC0095316A /* ItemCellView.swift in Sources */,
