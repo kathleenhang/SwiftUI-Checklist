@@ -1,5 +1,5 @@
 # SwiftUI-Checklist
-[SwiftUI] A simple todo list manager
+A simple todo list manager
 ## Main Screen
 <img width="556" alt="Screen Shot 2020-04-19 at 9 42 39 AM" src="https://user-images.githubusercontent.com/2395780/79694083-1a019900-8223-11ea-911f-8f9dc270ca0b.png">
 
