@@ -21,13 +21,68 @@ class TodoList: ObservableObject {
                  TodoListItem(name: "FEED MEHHH!!"),
     ]
     
+    // print path for document directory & .plist file
+    init() {
+        print("Documents directory: \(documentsDirectory())")
+        print("Data file: \(dataFilePath())")
+        loadListItem()
+    }
+    
     func deleteTodoItem(whichElement: IndexSet) {
         items.remove(atOffsets: whichElement)
+        saveListItems()
     }
     
     func moveTodoItem(whichElement: IndexSet, destination: Int) {
         items.move(fromOffsets: whichElement, toOffset: destination)
+        saveListItems()
     }
+    
+    // get document directory path
+    func documentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths[0]
+    }
+    
+    // get .plist file path
+    func dataFilePath() -> URL {
+        return documentsDirectory().appendingPathComponent("TodoList.plist")
+    }
+    
+    func saveListItems() {
+        // create encoder object
+        let encoder = PropertyListEncoder()
+        
+        do {
+            // use encoder object to encode todo list items
+            let data = try encoder.encode(items)
+            
+            // save items to .plist file location
+            try data.write(to: dataFilePath(),
+                           options: Data.WritingOptions.atomic)
+        } catch { // if encoding or saving fails, print error
+            print("Error encoding item array: \(error.localizedDescription)")
+        }
+    }
+    
+    func loadListItem() {
+        // store path of .plist file
+        let path = dataFilePath()
+        // if .plist exists, create a decoder object
+        if let data = try? Data(contentsOf: path) {
+            let decoder = PropertyListDecoder()
+            do {
+                // try to load data from .plist file into items array
+                items = try decoder.decode([TodoListItem].self, from: data)
+            } catch { // if data loading fails, print error to console
+                print("Error decoding item array: \(error.localizedDescription)")
+            }
+        }
+    }
+    
+    
+    
+    
     
     
 }

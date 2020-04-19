@@ -41,6 +41,8 @@ struct AddNewItemView: View {
                     // save new item to array
                     self.todoList.items.append(newTodoItem)
                     
+                    self.todoList.saveListItems()
+                    
                     // dismiss add item view
                     self.presentationMode.wrappedValue.dismiss()
                     

@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-struct TodoListItem: Identifiable {
+struct TodoListItem: Identifiable, Codable {
     var id = UUID() // unique identifier
     var name = "" // todo list item name
     var isChecked = false // is item completed or not?

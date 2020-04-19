@@ -19,6 +19,7 @@ struct MainTodoListView: View {
     init() {
         // set the styling property of the UI Navigation Bar's title text to my preference
         UINavigationBar.appearance().titleTextAttributes = [.font : UIFont(name: "blocked", size: 35)!]
+        
     }
     
     // this is the visual display user will see (initial app screen)
@@ -39,8 +40,12 @@ struct MainTodoListView: View {
                     .onDelete(perform: todoList.deleteTodoItem)
                     .onMove(perform: todoList.moveTodoItem)
                 }
-                // ********* MAIN SCREEN TITLE TEXT ****************
-                .navigationBarTitle(Text("Shit To Do"), displayMode: .inline)
+                    // ********* MAIN SCREEN TITLE TEXT ****************
+                    .navigationBarTitle(Text("Shit To Do"), displayMode: .inline)
+                    .onAppear() {
+                        self.todoList.saveListItems()
+                        
+                }
                 .environment(\.editMode, .constant(self.isEditing ? EditMode.active : EditMode.inactive)).animation(Animation.spring())
                 .navigationBarItems(leading:
                     Button(action: {
